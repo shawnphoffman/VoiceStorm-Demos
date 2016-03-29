@@ -1,0 +1,48 @@
+.posts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  h2 {
+      padding: 0 0 0.4em 0;
+      margin: 0 0 0.4em 0;
+      font-size: 2rem;
+      border-bottom: 1px solid #BBB;
+  }
+
+  .post {
+      flex: 1 1 calc(33.33% - 20px);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      min-width: 250px;
+      max-width: 360px;  
+      border: 3px solid teal;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      background: rgba(0,0,0,0.1);
+
+      transition: all 0s cubic-bezier(.36,.12,.6,.82);
+  }
+  .post:hover {
+      transform: scale(1.05);    
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
+  }
+
+  .post img {
+      width: 100%;
+  }
+
+  span {
+      font-size: 1rem;
+      font-style: italic;
+  }
+
+  a {
+      font-weight: bold;
+      margin: 0.25em 0;
+  }
+}

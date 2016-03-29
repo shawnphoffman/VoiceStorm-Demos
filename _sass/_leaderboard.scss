@@ -1,0 +1,42 @@
+.leaderboard {
+  border: 5px solid goldenrod;
+  padding: 5px;
+
+  .leaderboardHeaders {
+      background-color: #CCC;
+      font-weight: bold;
+      display: flex;
+  }
+
+  .leaderboardList {
+      border: 5px solid teal;
+      margin: 5px 0;
+  }
+
+  .leaderboardEntry {
+      display: flex;
+      border: 5px solid red;
+  }
+
+  .leaderboardHeaders {
+      display: flex;
+      border: 5px solid yellow;
+  }
+
+  .leaderboardEntry > *, .leaderboardHeaders > * {
+      padding: 5px;
+  }
+
+  .rank {
+      flex: 1;
+  }
+
+  .name {
+      flex: 5;
+  }
+
+  .score {
+      flex: 2;
+  }
+
+}
