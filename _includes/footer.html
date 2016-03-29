@@ -1,0 +1,14 @@
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  // loads the SDK asynchronously
+  (function (d, s, id)
+  {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://github.voicestorm.com/v1/voicestorm.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'voicestorm-sdk'));
+</script>
